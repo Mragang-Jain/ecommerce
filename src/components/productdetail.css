@@ -1,0 +1,30 @@
+.prod-detail{
+    background-color: darkgrey;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.pic{
+    width: 90%; 
+    padding: 20px;
+    margin: 15px;
+    /* justify-content: center; */
+    /* align-items: center; */
+    background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+    /* float: left; */
+    width: 180px;
+}
+
+.product{
+    padding-top: 40px;
+    background-color: #35BDD0;
+    min-height: 100vh;
+    
+ 
+}
+
+.deatil{
+    padding-left: 550px;
+  }
+
