@@ -1,11 +1,17 @@
 .App {
   text-align: center;
+<<<<<<< HEAD
   background-color:#8D3DAF;
   min-height: 100vh;
  padding-top: 50px;
 }
 
 /* .App-logo {
+=======
+}
+
+.App-logo {
+>>>>>>> 8553c69 (Initialize project using Create React App)
   height: 40vmin;
   pointer-events: none;
 }
@@ -14,9 +20,15 @@
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
+<<<<<<< HEAD
 } */
 
 /* .App-header {
+=======
+}
+
+.App-header {
+>>>>>>> 8553c69 (Initialize project using Create React App)
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -25,12 +37,21 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+<<<<<<< HEAD
 } */
 
 /* .App-link {
   color: #61dafb;
 } */
 /* 
+=======
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+>>>>>>> 8553c69 (Initialize project using Create React App)
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -38,4 +59,8 @@
   to {
     transform: rotate(360deg);
   }
+<<<<<<< HEAD
 } */
+=======
+}
+>>>>>>> 8553c69 (Initialize project using Create React App)
