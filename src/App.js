@@ -6,6 +6,10 @@ import Productdetails from './components/productdetails'
 import Cartdetails from './components/cartdetail'
 import Login from './components/login'
 import PrivateRoute from './components/PrivateRoute'
+import {createContext} from 'react'
+
+
+const Title = createContext()
 
 function App() {
 
@@ -17,6 +21,7 @@ function App() {
     <div className="App">
      {localStorage.getItem('token') && <Header/>}
      {localStorage.getItem('token') && <h1 style={{color:'#F7CD2E'}}>Sasta Mart</h1>}
+     <Title.Provider value={"Vinod Thappa"}>
      <Switch>
     <Route path="/login" component={Login} />
      <PrivateRoute exact path="/" component={Productlist} /> 
@@ -24,10 +29,13 @@ function App() {
      <PrivateRoute exact path="/list" component={Productlist} />
      <PrivateRoute path="/product/:productId" component={Productdetails} />
      </Switch>
+     </Title.Provider>
     </div>
     
     </>
   );
 }
+
+export {Title}
 
 export default App;

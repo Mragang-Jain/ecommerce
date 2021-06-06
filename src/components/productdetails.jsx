@@ -1,12 +1,14 @@
-import React ,{useEffect , useState} from 'react'
+import React ,{useEffect , useState , useContext} from 'react'
 import {useParams} from 'react-router-dom' 
 import axios from 'axios'
 import { addtocart} from '../actions/action'
 import {useDispatch } from 'react-redux'
 import './productdetail.css'
+import {Title} from '../App';
 
 
 const Productdetails = () => {
+  const title = useContext(Title)
   const [product , setProduct] = useState('')
     const  { productId }  = useParams();
     // console.log("CHXVA", productId)
@@ -38,6 +40,7 @@ const Productdetails = () => {
     console.log("product",product )
     return (
         <div className='product'>
+          <h1>{title}</h1>
            <h1>{(product?.category)?product.category.toUpperCase():''}</h1>
           <div style={{width:"80%" , paddingTop:"40px" }}>
          <div className='immage' >
