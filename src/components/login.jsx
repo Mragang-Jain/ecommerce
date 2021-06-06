@@ -13,14 +13,9 @@ const Login = () => {
     //     <App />
     // )
     const history = useHistory();
-    // console.log("Histort", history )
     const [Username ,setUsername] = useState('')
     const [Password , setPassword] = useState('')
     const [Form , setForm] = useState(true)
-    
-    // if(isLoggedin){
-    //     history.replace('/')
-    // }
    
 
     const Handleclick  = async () =>{
