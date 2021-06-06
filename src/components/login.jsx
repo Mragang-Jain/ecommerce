@@ -7,20 +7,10 @@ import axios from 'axios'
 import {login} from '../utils'
 
 const Login = () => {
-
-
-    // return (
-    //     <App />
-    // )
     const history = useHistory();
-    // console.log("Histort", history )
     const [Username ,setUsername] = useState('')
     const [Password , setPassword] = useState('')
     const [Form , setForm] = useState(true)
-    
-    // if(isLoggedin){
-    //     history.replace('/')
-    // }
    
 
     const Handleclick  = async () =>{
@@ -145,21 +135,14 @@ const Login = () => {
     }
 
     const responseGoogle = (res) =>{
-       // localStorage.setItem('token', res.tokenId )
         login(res.tokenId)
-        // console.log(localStorage.getItem('token'))
         history.replace('/')
-        // setTimeout(()=>{
-          
-            
-        // }, 1000)
     }
     const form =() =>{
         console.log("form", Form )
         return(
             <div>
             { Form ?  Loginform() : signupform() }
-            {/* <ToastContainer /> */}
            </div>
         )
     }
